@@ -1,0 +1,73 @@
+.settings {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  transition: transform 0.5s;
+  ;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  margin: 0.5rem;
+
+  &__close-open-btn {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: rotate(45deg);
+    transition: 0.5s;
+
+   &--x {
+     position: absolute;
+    width: 1rem;
+    height: 0.1rem;
+    background-color: blueviolet;
+    border-radius: 1rem;
+   }
+
+   &--y {
+     position: absolute;
+    width: 1rem;
+    height: 0.1rem;
+    background-color: blueviolet;
+    border-radius: 1rem;
+    transform: rotate(90deg);
+   }
+
+   &--hidden {
+     transform: rotate(90deg);
+     transition: 0.5s;
+   }
+  }
+
+  &__form-element {
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    width: 12rem;
+    padding-left: 1rem;
+  }
+
+  &__send-btn {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #5300FF;
+    color: #ffffff;
+  }
+
+  &__hidden {
+    transform: translateX(13rem);
+    transition: 0.5s;
+  }
+}

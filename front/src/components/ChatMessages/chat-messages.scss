@@ -1,0 +1,14 @@
+.chat-messages {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  
+  &__list {
+    overflow-y: auto;
+    max-height: 80vh;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
